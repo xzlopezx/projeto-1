@@ -1,17 +1,20 @@
 <?php
-require '../vendor/autoload.php';
+$nome = $_GET['nome'];
+$mensagem = "Boa noite $nome";
 
-use Application\Hello;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <link href="/css/default.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Projetc</title>
 </head>
 <body>
-    <h1>PHP & Mysql</h1>
-    <p><?= Hello::message() ?></p>
+    <h1>Projeto 1</h1>
+    <b>Bem-vindos<strong></b>
+    <p><i> <b>
+      <p><?= $mensagem ?><p>
+
 </body>
 </html>
